@@ -42,6 +42,7 @@ import { DonationItemComponent } from './components/donation-item/donation-item.
 import { AddDonationItemComponent } from './components/donation-item/add-donation-item/add-donation-item.component';
 import { RemoveDonationItemComponent } from './components/donation-item/remove-donation-item/remove-donation-item.component';
 import { UpdateItemsComponent } from './components/donation-item/update-donation-item/update-donation-item.component';
+import { ChartComponent } from './components/chart/chart.component';
 
 @NgModule({
   declarations: [
@@ -62,7 +63,8 @@ import { UpdateItemsComponent } from './components/donation-item/update-donation
     DonationItemComponent,
     AddDonationItemComponent,
     RemoveDonationItemComponent,
-    UpdateItemsComponent
+    UpdateItemsComponent,
+    ChartComponent
   ],
   imports: [
     BrowserModule,
@@ -80,6 +82,7 @@ import { UpdateItemsComponent } from './components/donation-item/update-donation
     HttpClientModule,
     MatNativeDateModule,
     ReactiveFormsModule,
+   
   ],
   providers: [
     { provide: BUCKET, useValue: environment.firebaseConfig.storageBucket }, AuthService
