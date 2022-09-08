@@ -19,7 +19,7 @@ import { DragDropDirectiveDirective } from './components/upload-image/drag-drop-
 //--------------------------------------------------------------------//
 
 //-------------------- FireBase libs ---------------------------------------//
-import { provideFirebaseApp, getApp, initializeApp } from '@angular/fire/app';
+import { provideFirebaseApp, initializeApp } from '@angular/fire/app';
 import { getFirestore, provideFirestore } from '@angular/fire/firestore';
 import { AngularFireModule } from '@angular/fire/compat';
 import { AngularFireStorageModule, BUCKET } from '@angular/fire/compat/storage';
@@ -42,6 +42,7 @@ import { DonationItemComponent } from './components/donation-item/donation-item.
 import { AddDonationItemComponent } from './components/donation-item/add-donation-item/add-donation-item.component';
 import { RemoveDonationItemComponent } from './components/donation-item/remove-donation-item/remove-donation-item.component';
 import { UpdateItemsComponent } from './components/donation-item/update-donation-item/update-donation-item.component';
+import { ReportsComponent } from './components/reports/reports.component';
 
 @NgModule({
   declarations: [
@@ -62,7 +63,8 @@ import { UpdateItemsComponent } from './components/donation-item/update-donation
     DonationItemComponent,
     AddDonationItemComponent,
     RemoveDonationItemComponent,
-    UpdateItemsComponent
+    UpdateItemsComponent,
+    ReportsComponent
   ],
   imports: [
     BrowserModule,

@@ -321,7 +321,8 @@ export class OrganisationComponent {
   //-------------------- GET ITEMS --------------------\\
   getItems(orgID) {
     this.getItemsSubscription = this.ifs.getItems(orgID)
-      .subscribe(items => {
+      .subscribe((items:any) => {
+        
         this.items = items as Item[]
       })
   }
